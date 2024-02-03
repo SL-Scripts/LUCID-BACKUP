@@ -1,0 +1,32 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "HYxDeath Hub", HidePremium = false,IntroText = "Sub to HYxDeath!", SaveConfig = true, ConfigFolder = "HYxDeath Hub"})
+
+local Tab = Window:MakeTab({
+	Name = "Blox Fruits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "HEY",
+	Content = "Sub To HYxDeath!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Section = Tab:AddSection({
+	Name = "Blox Fruits Scripts"
+})
+
+Tab:AddButton({
+	Name = "RedZ",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+      		print("button pressed")
+  	end    
+})
+
+OrionLib:Init()
+
+
+
